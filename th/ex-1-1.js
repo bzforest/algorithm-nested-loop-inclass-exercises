@@ -6,7 +6,18 @@
     - เมื่อ Algorithm นี้ทำงาน จะต้องเห็นผลลัพธ์ด้านล่าง
 */
 
-// Start coding here
+function multiplyByTwo (matrix) {
+  let result = [];
+
+  for (let i = 0; i < matrix.length; i++) {
+    console.log(matrix[i]);
+    for (let j = 0; j < matrix[i].length; j++) {
+      console.log(matrix[i][j]);
+      result.push(matrix[i][j] * 2)
+    }
+  }
+  return result
+}
 
 const matrix = [
   [11, 22],

@@ -6,7 +6,18 @@
     - เมื่อ Algorithm นี้ทำงาน จะต้องเห็นผลลัพธ์ดังนี้
 */
 
-// Start coding here
+function showStudentsData (studentInfo) {
+  let result = "";
+
+    for (let person of studentInfo) {
+      for (let students in person) {
+        result += `${students}: ${person[students]} \n`
+      }
+    }
+
+
+  return result
+}
 
 const studentsInfo = [
   { name: "Alice", age: 14, classNumber: 8, favoriteSubject: "Math" },

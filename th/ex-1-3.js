@@ -6,7 +6,18 @@
     3. เมื่อ Algorithm นี้ทำงานจะเห็นผลลัพธ์ด้านล่าง
 */
 
-// Start coding here
+function generatePattern (size) {
+    let result = "";
+
+    for (let i = 0; i < size; i++) {
+        let row = "";
+    for (let j = 0; j < size-[i]; j++) {
+            row += "# "
+        }
+        result += row +"\n"
+    }
+    return result
+}
 
 console.log(generatePattern(3)); 
 
